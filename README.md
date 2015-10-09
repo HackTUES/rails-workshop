@@ -1,4 +1,6 @@
-## Part 1
+# HackTUES 2 Ruby on Rails workshop
+
+## Part 1 - Getting comfortable
 
 ### Introduction
 * What is Rails?
@@ -80,3 +82,43 @@ config.ru 	   | A configuration file for Rack middleware
 ### Exercises
 * Change the **hello** action to display a sentence of your choice
 * Add a **goodbye** action that renders "Goodbye, world!" and edit the routes file accordingly
+
+## Part 2 - Twitter-style application
+
+### Planning
+* REST
+* Remember note about scaffolding
+* ```rails new```
+* Models for user and micropost
+  * Users - id, name, email
+  * Microposts - id, content, user_id
+ 
+### Users resource
+* ```rails generate scaffold```
+* Migrating our database
+* Note: Rake
+* MVC in action - let's take a tour
+* RESTful routes
+
+HTTP request |	URL           |	Action  |	Purpose
+-------------|---------------|---------|-----------------------------
+GET          |	/users        |	index   |	page to list all users
+GET          |	/users/1      |	show    |	page to show user with id 1
+GET          |	/users/new    |	new     |	page to make a new user
+POST         |	/users        |	create  |	create a new user
+GET          |	/users/1/edit |	edit    |	page to edit user with id 1
+PATCH        |	/users/1      |	update  |	update user with id 1
+DELETE       |	/users/1      |	destroy |	delete user with id 1
+
+* Weaknesses
+ * No data validation
+ * No auth
+ * No styling
+ * **No real understanding**
+
+### Microposts resource
+* Repeat first steps just like the users resource
+* Validations - constraining microposts to 140 characters
+* Associations
+  * **has_many**
+  * **belongs_to**
