@@ -77,6 +77,6 @@ config.ru 	   | A configuration file for Rack middleware
   * Add a hello action to the Application controller
   * Set the root route
 
-* Exercises
-  * Change the **hello** action to display a sentence of your choice
-  * Add a **goodbye** action that renders "Goodbye, world!" and edit the routes file accordingly
+### Exercises
+* Change the **hello** action to display a sentence of your choice
+* Add a **goodbye** action that renders "Goodbye, world!" and edit the routes file accordingly
