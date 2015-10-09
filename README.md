@@ -72,7 +72,11 @@ config.ru 	   | A configuration file for Rack middleware
   * Architectural pattern
   * Separates internal representation of information from the way the user receives it
   * Interactions
-  * Note: browser requests
+  * Note: HTTP requests
 * Hello World!
   * Add a hello action to the Application controller
   * Set the root route
+
+* Exercises
+  * Change the **hello** action to display a sentence of your choice
+  * Add a **goodbye** action that renders "Goodbye, world!" and edit the routes file accordingly
