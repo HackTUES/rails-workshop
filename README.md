@@ -36,8 +36,7 @@ remove empty directory              | rmdir <directory>
 remove nonempty directory           | rm -rf <directory>
 concatenate & display file contents | cat <file>
 
-* ``` rails new ```
-
+* ```rails new```
 * Standard directory and file structure
 
 File/Dir      | Purpose
@@ -51,7 +50,7 @@ doc/          | Documentation for the application
 lib/          | Library modules
 lib/assets 	  | Library assets such as cascading style sheets (CSS), JavaScript files, and images
 log/ 	        | Application log files
-public/ 	    | Data accessible to the public (e.g., via web browsers), such as error pages
+public/ 	     | Data accessible to the public (e.g., via web browsers), such as error pages
 bin/rails     | A program for generating code, opening console sessions, or starting a local server
 test/         | Application tests
 tmp/ 	        | Temporary files
@@ -59,12 +58,21 @@ vendor/       | Third-party code such as plugins and gems
 vendor/assets | Third-party assets such as cascading style sheets (CSS), JavaScript files, and images
 README.rdoc   | A brief description of the application
 Rakefile 	    | Utility tasks available via the rake command
-Gemfile     	| Gem requirements for this app
+Gemfile     	 | Gem requirements for this app
 Gemfile.lock 	| A list of gems used to ensure that all copies of the app use the same gem versions
-config.ru 	  | A configuration file for Rack middleware
+config.ru 	   | A configuration file for Rack middleware
 .gitignore   	| Patterns for files that should be ignored by Git
 
 * Bundler
   * Gems are truly outrageous
-  * ``` bundle install ```
+  * ```bundle install```
   * Gemfile
+* ```rails server```
+* MVC
+  * Architectural pattern
+  * Separates internal representation of information from the way the user receives it
+  * Interactions
+  * Note: browser requests
+* Hello World!
+  * Add a hello action to the Application controller
+  * Set the root route
