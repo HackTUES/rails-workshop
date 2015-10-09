@@ -122,3 +122,16 @@ DELETE       |	/users/1      |	destroy |	delete user with id 1
 * Associations
   * **has_many**
   * **belongs_to**
+
+### Exercises
+* Find out how to validate the presence of micropost content
+* When you do, validate the presence of name and email attributes in the User model as well
+
+## Conclusion
+* Very high-level overview of Rails
+* Taste of MVC and REST
+* Working simple web app
+
+## What next?
+* This workshop is based on Chapter 1 & 2 of [Michael Hartl's Rails Tutorial](https://www.railstutorial.org/)
+* You can read the whole book to get a great understanding of Rails
